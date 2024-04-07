@@ -1,12 +1,16 @@
 //kindly check
 //npx saeef32-guessing-num
+
 import inquirer from "inquirer"
 const guess = await inquirer.prompt(
     [{message:"guess a number between 10 to 20",name: "number",type:"number"},]
 )
-let num :number = 13
-if (guess.number===num) {
+while (guess.number != 13){
+    const guess = await inquirer.prompt(
+        [{message:"guess a number between 10 to 20",name: "number",type:"number"},]
+    )
+if (guess.number===13) {
     console.log("congrats you chose correct number ")
-} else {
+    break } else {
     console.log("sorry try agian")
-}
+}}
