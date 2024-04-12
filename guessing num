@@ -2,10 +2,8 @@
 //npx saeef32-guessing-num
 
 import inquirer from "inquirer"
-const guess = await inquirer.prompt(
-    [{message:"guess a number between 10 to 20",name: "number",type:"number"},]
-)
-while (guess.number != 13){
+
+while (true){
     const guess = await inquirer.prompt(
         [{message:"guess a number between 10 to 20",name: "number",type:"number"},]
     )
